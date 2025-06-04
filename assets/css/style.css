@@ -229,16 +229,16 @@ mark {
 }
 
 .gallery-grid img {
-  width: 100%;
+  width: 400px;
   height: auto;
   max-width: 100%;
   border-radius: 8px;
-  transition: transform 0.3s;
+  /* transition: transform 0.3s; */
 }
 
-.gallery-grid img:hover {
+/* .gallery-grid img:hover {
   transform: scale(1.05);
-}
+} */
 
 /* Contact Section */
 .contact-preview {
@@ -268,6 +268,50 @@ mark {
 }
 
 .contact-content a:hover {
+  color: var(--accent-red);
+}
+
+/* Footer Styles */
+.footer {
+  /* background-color: var(--bg-secondary); */
+  color: var(--text-primary);
+  padding: 25px 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-container p {
+  margin: 0;
+  color: var(--text-primary);
+  flex: 1 1 200px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex: 1 1 200px;
+}
+
+.footer-socials a {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
   color: var(--accent-red);
 }
 
@@ -303,6 +347,17 @@ mark {
 
   .gallery-grid img {
     max-width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container p,
+  .footer-socials {
+    flex: none;
+    width: 100%;
   }
 }
 
