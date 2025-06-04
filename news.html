@@ -8,16 +8,17 @@
   <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpeg" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="navbar-header">
       <a href="index.html" class="navbar-brand">
         <img src="assets/images/liveha2.jpg" alt="LIVEHA Logo" class="navbar-logo" />
         <span>LIVEHA</span>
-      </a> 
+      </a>
       <button class="menu-toggle" id="menuToggle">&#9776;</button>
     </div>
     <ul class="nav-links" id="navLinks">
@@ -27,14 +28,15 @@
     </ul>
   </nav>
 
-  <section class="journey">
-    <h2> News</h2>
-    <p class="hero-description">
-      No updates yet but exciting things are coming soon!<br>
-      Stay tuned and follow LIVEHA on social media to be the first to know.
-    </p>
-  </section>
-
+  <main>
+    <section class="journey">
+      <h2> News</h2>
+      <p class="hero-description">
+        No updates yet but exciting things are coming soon!<br>
+        Stay tuned and follow LIVEHA on social media to be the first to know.
+      </p>
+    </section>
+  </main>
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
@@ -48,9 +50,15 @@
       <p>&copy; 2025 LIVEHA. All rights reserved.</p>
       <div class="footer-socials">
         <a href="https://www.instagram.com/_liveha_/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://open.spotify.com/artist/2bqydyILdFmREFoAxYQ3sO" target="_blank"><i class="fab fa-spotify"></i></a>
-        <a href="https://www.youtube.com/channel/UCtaZ6fHaJLPUkty5ag7Fm0w" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://open.spotify.com/artist/2bqydyILdFmREFoAxYQ3sO" target="_blank"><i
+            class="fab fa-spotify"></i></a>
+        <a href="https://www.youtube.com/channel/UCtaZ6fHaJLPUkty5ag7Fm0w" target="_blank"><i
+            class="fab fa-youtube"></i></a>
       </div>
+      <p style="color: #e62815;">A project by
+        <a href="https://www.instagram.com/mad.bark.creations/?hl=en" target="_blank"
+          style="color: #e62815;">madbarkcreations</a>
+      </p>
     </div>
   </footer>
 

@@ -8,11 +8,13 @@
   <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpeg" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 </head>
 
 <body>
+
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="navbar-header">
       <a href="index.html" class="navbar-brand">
         <img src="assets/images/liveha2.jpg" alt="LIVEHA Logo" class="navbar-logo" />
@@ -27,190 +29,196 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>LIVEHA</h1>
-      <p class="hero-description">
-        I've got my own relationship with GOD
-        I am who I am<br>
-        <mark>Producer/sound engineer/song writer</mark><br>
-        <mark>Independent artist</mark>
-      </p>
-      <div class="hero-images">
-        <img src="assets/images/liveha.jpg" alt="LIVEHA Artist Photo" class="hero-img" />
-        <!-- <img src="assets/images/liveha2.jpg" alt="LIVEHA Artist Photo" class="hero-img" /> -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>LIVEHA</h1>
+        <p class="hero-description">
+          I've got my own relationship with GOD
+          I am who I am<br>
+          <mark>Producer/sound engineer/song writer</mark><br>
+          <mark>Independent artist</mark>
+        </p>
+        <div class="hero-images">
+          <img src="assets/images/liveha.jpg" alt="LIVEHA Artist Photo" class="hero-img" />
+          <!-- <img src="assets/images/liveha2.jpg" alt="LIVEHA Artist Photo" class="hero-img" /> -->
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_liveha_/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://open.spotify.com/artist/2bqydyILdFmREFoAxYQ3sO" target="_blank" aria-label="Spotify">
+            <i class="fab fa-spotify"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCtaZ6fHaJLPUkty5ag7Fm0w" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=%2B254758747481" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+        </div>
+
       </div>
-      <div class="social-links">
-        <a href="https://www.instagram.com/_liveha_/" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://open.spotify.com/artist/2bqydyILdFmREFoAxYQ3sO" target="_blank" aria-label="Spotify">
-          <i class="fab fa-spotify"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCtaZ6fHaJLPUkty5ag7Fm0w" target="_blank" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=%2B254758747481" target="_blank" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        
+    </section>
+
+    <!-- Music Section -->
+    <section class="music">
+      <h2>Music</h2>
+      <div class="music-grid">
+
+        <!-- Spotify Artist Embed - shows all songs, albums, and playlists -->
+        <div class="music-card">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/artist/2bqydyILdFmREFoAxYQ3sO?utm_source=generator" width="100%"
+            height="352" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/04WURXRGUwXlZLnTL8ggbh?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/4WZP2oBIY2lrBiSs8zK5iy?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- Spotify Embed -->
+        <div class="music-card">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/1siUa4jUfbcZ87db8OOHNk?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+
+
+        <!-- YouTube Embed -->
+        <div class="music-card">
+          <iframe src="https://www.youtube.com/embed/hwLEmsgIU6Q" title="LIVEHA - CTRL (Official Visualizer)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe width="718" height="404" src="https://www.youtube.com/embed/rGK9E5xksLc"
+            title="MY LOVE Official Audio" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe width="718" height="404"
+            src="https://www.youtube.com/embed/Q0YRUelVECE?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo" title="KITTY"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe width="718" height="404"
+            src="https://www.youtube.com/embed/RYhZ1Uqvp2c?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
+            title="SO SICK" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe width="718" height="404"
+            src="https://www.youtube.com/embed/rqALfMtvhZo?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
+            title="INTIENTIONS" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <!-- Add more music-card divs below as needed -->
+
+        <div class="music-card">
+          <iframe width="718" height="404"
+            src="https://www.youtube.com/embed/jawLNZrSpn4?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
+            title="ON TOP YA BODY" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe width="718" height="404"
+            src="https://www.youtube.com/embed/DhPa2oTQCOI?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
+            title="MISS BEHAVIOUR (interlude)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe width="718" height="404"
+            src="https://www.youtube.com/embed/hSwO7iMD92A?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo" title="NIA"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <div class="music-card">
+          <iframe width="718" height="404"
+            src="https://www.youtube.com/embed/QcYVrtWhwbg?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
+            title="WALK OUT" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
       </div>
 
-    </div>
-  </section>
-
-  <!-- Music Section -->
-  <section class="music">
-    <h2>Music</h2>
-    <div class="music-grid">
-
-      <!-- Spotify Artist Embed - shows all songs, albums, and playlists -->
-      <div class="music-card">
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/artist/2bqydyILdFmREFoAxYQ3sO?utm_source=generator" width="100%"
-          height="352" frameborder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-        </iframe>
+      <!-- Load More Button -->
+      <div class="load-more-container">
+        <button id="loadMoreBtn">Load More</button>
       </div>
+    </section>
 
-      <div class="music-card">
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/album/04WURXRGUwXlZLnTL8ggbh?utm_source=generator" width="100%"
-          height="352" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <!-- News Section -->
+    <section class="gallery">
+      <h2>News</h2>
+      <div class="gallery-grid">
+        <img src="assets/images/News1.jpg" alt="LIVEHA gallery image" />
+        <img src="assets/images/News2.jpg" alt="LIVEHA gallery image" />
+
+
       </div>
+    </section>
 
-      <div class="music-card">
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/album/4WZP2oBIY2lrBiSs8zK5iy?utm_source=generator" width="100%"
-          height="352" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <!-- Contact Preview Section -->
+    <section class="contact-preview">
+      <h2>How to Contact Me </h2>
+      <div class="contact-content">
+        <p style="color: #e62815;">Email:
+          <a href="mailto:ellyasliveha@gmail.com"
+            style="color: #aaa8ad; text-decoration: underline;">ellyasliveha@gmail.com</a>
+        </p>
+        <p>
+          <i class="fab fa-instagram" style="color: #e62815;"></i>
+          <a href="https://www.instagram.com/_liveha_/?hl=en" target="_blank"
+            style="color: #aaa8ad; text-decoration: underline;">
+            My Instagram
+          </a>
+        </p>
+        <p>
+          <i class="fab fa-whatsapp" style="color: #e62815;"></i>
+          <a href="https://api.whatsapp.com/send?phone=%2B254758747481" target="_blank"
+            style="color: #aaa8ad; text-decoration: underline;">
+            Chat on WhatsApp
+          </a>
+        </p>
       </div>
+    </section>
 
-      <!-- Spotify Embed -->
-      <div class="music-card">
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/track/1siUa4jUfbcZ87db8OOHNk?utm_source=generator" width="100%"
-          height="352" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-
-
-
-      <!-- YouTube Embed -->
-      <div class="music-card">
-        <iframe src="https://www.youtube.com/embed/hwLEmsgIU6Q" title="LIVEHA - CTRL (Official Visualizer)"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-        </iframe>
-      </div>
-
-      <div class="music-card">
-        <iframe width="718" height="404" src="https://www.youtube.com/embed/rGK9E5xksLc" title="MY LOVE Official Audio"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="music-card">
-        <iframe width="718" height="404"
-          src="https://www.youtube.com/embed/Q0YRUelVECE?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo" title="KITTY"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="music-card">
-        <iframe width="718" height="404"
-          src="https://www.youtube.com/embed/RYhZ1Uqvp2c?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo" title="SO SICK"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="music-card">
-        <iframe width="718" height="404"
-          src="https://www.youtube.com/embed/rqALfMtvhZo?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
-          title="INTIENTIONS" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <!-- Add more music-card divs below as needed -->
-
-      <div class="music-card">
-        <iframe width="718" height="404"
-          src="https://www.youtube.com/embed/jawLNZrSpn4?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
-          title="ON TOP YA BODY" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="music-card">
-        <iframe width="718" height="404"
-          src="https://www.youtube.com/embed/DhPa2oTQCOI?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
-          title="MISS BEHAVIOUR (interlude)" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="music-card">
-        <iframe width="718" height="404"
-          src="https://www.youtube.com/embed/hSwO7iMD92A?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo" title="NIA"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-      <div class="music-card">
-        <iframe width="718" height="404"
-          src="https://www.youtube.com/embed/QcYVrtWhwbg?list=OLAK5uy_nqNjjCivNFvt5Rq8bNdxKJgIpoilDRqzo"
-          title="WALK OUT" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      </div>
-
-    </div>
-
-    <!-- Load More Button -->
-    <div class="load-more-container">
-      <button id="loadMoreBtn">Load More</button>
-    </div>
-  </section>
-
-  <!-- News Section -->
-  <section class="gallery">
-    <h2>News</h2>
-    <div class="gallery-grid">
-      <img src="assets/images/News1.jpg" alt="LIVEHA gallery image" />
-      <img src="assets/images/News2.jpg" alt="LIVEHA gallery image" />
-
-
-    </div>
-  </section>
-
-  <!-- Contact Preview Section -->
-  <section class="contact-preview">
-    <h2>How to Contact Me </h2>
-    <div class="contact-content">
-      <p style="color: #e62815;">Email:
-        <a href="mailto:ellyasliveha@gmail.com" style="color: #aaa8ad; text-decoration: underline;">ellyasliveha@gmail.com</a>
-      </p>
-      <p>
-        <i class="fab fa-instagram" style="color: #e62815;"></i>
-        <a href="https://www.instagram.com/_liveha_/?hl=en" target="_blank" style="color: #aaa8ad; text-decoration: underline;">
-          My Instagram
-        </a>
-      </p>
-      <p>
-        <i class="fab fa-whatsapp" style="color: #e62815;"></i>
-        <a href="https://api.whatsapp.com/send?phone=%2B254758747481" target="_blank" style="color: #aaa8ad; text-decoration: underline;">
-          Chat on WhatsApp
-        </a>
-      </p>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
@@ -235,10 +243,15 @@
           <i class="fab fa-youtube"></i>
         </a>
       </div>
+      <p style="color: #e62815;">A project by
+        <a href="https://www.instagram.com/mad.bark.creations/?hl=en" target="_blank"
+          style="color: #e62815;">madbarkcreations</a>
+      </p>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
