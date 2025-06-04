@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>News | LIVEHA</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
   <nav class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+    <div class="navbar-header">
+      <!-- <span class="navbar-brand">MySite</span> -->
+      <button class="menu-toggle" id="menuToggle">&#9776;</button> <!-- ☰ -->
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <section class="news">
     <h1>Latest News & Tours</h1>
     <ul>
@@ -23,5 +30,9 @@
       <li>🌍 Tour across East Africa planned for Q4 2025</li>
     </ul>
   </section>
+
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

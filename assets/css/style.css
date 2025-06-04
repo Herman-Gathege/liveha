@@ -22,17 +22,39 @@ body {
   padding: 20px;
 }
 
-/* Navbar */
+/* Navbar container */
 .navbar {
-  /* background-color: var(--bg-secondary); */
   padding: 15px 20px;
   margin-bottom: 20px;
   border-radius: 8px;
-  text-align: center;
+  background-color: var(--bg-main, #f8f8f8);
 }
 
-.navbar ul {
-  list-style-type: none;
+/* Navbar header: brand + toggle button */
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary, #333);
+}
+
+/* Hamburger menu toggle */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* Hidden on large screens */
+}
+
+/* Navigation links (desktop view) */
+.nav-links {
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -40,15 +62,21 @@ body {
   padding: 0;
 }
 
-.navbar a {
-  color: var(--text-primary);
+/* Individual link styles */
+.nav-links li a {
+  color: var(--text-primary, #333);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-.navbar a:hover {
+.nav-links li a:hover {
+  color: var(--accent-red, #e91e63);
+}
+
+.nav-links li a.active {
   color: var(--accent-red);
+  border-bottom: 2px solid var(--accent-red);
 }
 
 .hero-content {
@@ -88,6 +116,8 @@ body {
   font-size: 2.5rem; /* Bigger subtitle */
   color: var(--text-primary);
   text-align: center;
+  line-height: 1.6;
+  margin-top: 1rem;
 }
 
 mark {
@@ -95,6 +125,8 @@ mark {
   color: var(--bg-main);
   padding: 0 5px;
   border-radius: 4px;
+    font-weight: bold;
+
 }
 
 
@@ -119,7 +151,7 @@ mark {
 /* music section */
 .music {
   margin: 40px 0;
-  background-color: var(--bg-secondary);
+  /* background-color: var(--bg-secondary); */
   padding: 40px 20px;
   border-radius: 8px;
   text-align: center;
@@ -141,11 +173,11 @@ mark {
 
 /* Individual card styling */
 .music-card {
-  background-color: #00000000; /* transparent or themed if needed */
+  background-color: #00000000; 
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 12px rgba(23, 79, 182, 0.3); */
   overflow: hidden;
 }
 
@@ -180,10 +212,13 @@ mark {
 
 
 
-/* Gallery */
+/* News Section */
 .gallery h2 {
   color: var(--accent-red);
   margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+
 }
 
 .gallery-grid {
@@ -193,9 +228,11 @@ mark {
 }
 
 .gallery-grid img {
-  max-width: 200px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 8px;
   transition: transform 0.3s;
+
 }
 
 .gallery-grid img:hover {
@@ -204,13 +241,73 @@ mark {
 
 /* Contact Section */
 .contact-preview {
-  background-color: var(--bg-secondary);
-  padding: 20px;
+  margin: 40px 0;
+  padding: 40px 20px;
   border-radius: 8px;
-  margin-top: 40px;
+  text-align: center;
+  /* background-color: var(--bg-secondary); */
 }
 
-.contact-preview a {
-  color: var(--accent-brown);
+.contact-preview h2 {
+  color: var(--accent-red);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin: 10px 0;
+}
+
+.contact-content a {
+  color: var(--accent-red);
   text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-content a:hover {
+  color: var(--accent-red);
+}
+
+
+@media screen and (max-width: 600px) {
+  .music-card iframe {
+    height: 500px !important; /* taller embeds for easier scrolling */
+  }
+
+  .music h2 {
+    font-size: 2rem;
+  }
+
+  .music-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-preview h2 {
+    font-size: 2rem;
+  }
+
+  .contact-content p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
